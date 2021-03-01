@@ -1,13 +1,14 @@
 import React from 'react';
-import BuyedPlayer from '../BuyedPlayer/BuyedPlayer';
+import './Cart.css';
 
 const Cart = (props) => {
     console.log(props.cart);
     const cart = props.cart;
     
     return (
-        <div>
-            <h2>Player Cart</h2>
+        <div className="cart">
+            <h2 className="text-center border-bottom"><b>Player Cart</b> </h2>
+            <br/>
             <h3>Player buyed: {cart.length}</h3>
             {
                 cart.map(player => <p>{player.name}</p>)

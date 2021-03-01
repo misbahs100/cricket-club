@@ -1,0 +1,10 @@
+.cart{
+    margin-left: 15px;
+    /* border: 1px solid red; */
+    /* transition: transform 0.5s; */
+    padding: 5px;
+}
+.cart:hover{
+    /* background-color: lightgray; */
+    /* transform: translate(-15px); */
+}
