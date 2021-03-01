@@ -7,6 +7,7 @@ import { faCoffee, faCricket, faBowlingBall, faShoppingCart, faUser } from '@for
 const Cart = (props) => {
     console.log(props.cart);
     const cart = props.cart;
+    // const {name, image} = cart.map(player => (player.name, player.image ) );
     const Budget = cart.reduce((Sum, budget) => Sum + budget.salary , 0);
     const totalBudget = Number(Budget.toFixed(2));
     
@@ -16,7 +17,7 @@ const Cart = (props) => {
             <br/>
             <h4>Player buyed: {cart.length}</h4>
             {
-                cart.map(player => <p>{player.name}</p>)
+                cart.map(player => <p><img className="cart-img" src={player.image} alt=""/> {player.name}</p>)
             }
             <h4>Total Salary/Budget: {totalBudget}</h4> <br/>
             <button className="btn btn-success ">

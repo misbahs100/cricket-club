@@ -8,3 +8,8 @@
     /* background-color: lightgray; */
     /* transform: translate(-15px); */
 }
+.cart-img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
