@@ -7,22 +7,20 @@ import Cart from '../Cart/Cart';
 const Club = () => {
     const [players, setPlayers] = useState(playersData);
     const [cart, setCart] = useState([]);
-    useEffect(()=>{
+    useEffect(() => {
         setPlayers(playersData);
-    } , [])
-    // console.log(players);
-    const handleButton = (player) =>{
-        // console.log('button clicked'); 
+    }, []) 
+    const handleButton = (player) => {
         const newCart = [...cart, player];
         setCart(newCart);
     }
     return (
-        <div className="club-container"> 
+        <div className="club-container">
             <div className="players-container">
                 {
                     players.map(player => <Players player={player} handleButton={handleButton} key={player.id}></Players>)
                 }
-                
+
             </div>
             <div className="cart-container">
                 <Cart cart={cart}></Cart>

@@ -5,7 +5,6 @@ import { faCoffee, faCricket, faBowlingBall, faShoppingCart, faUser } from '@for
 
 
 const Players = (props) => {
-    // console.log(props.player) 
     const {name, salary, image, team} = props.player;    // destructuring
     return (
         <div className="players">
