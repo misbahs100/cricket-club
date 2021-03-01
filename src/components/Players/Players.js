@@ -1,7 +1,7 @@
 import React from 'react';
 import './Players.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faCricket, faBowlingBall, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { faCoffee, faCricket, faBowlingBall, faShoppingCart, faUser } from '@fortawesome/free-solid-svg-icons'
 
 
 const Players = (props) => {
@@ -17,7 +17,7 @@ const Players = (props) => {
                 <h3>Team: {team}</h3>
                 <h4>Salary: ${salary}</h4> <br/>
                 <button className="btn btn-success player-button" onClick={() => props.handleButton(props.player)}>
-                <FontAwesomeIcon icon={faShoppingCart} />Click to Buy <b>{name}</b></button>
+                <FontAwesomeIcon icon={faUser} /> Click to Buy <b>{name}</b></button>
             </div>
         </div>
     );
